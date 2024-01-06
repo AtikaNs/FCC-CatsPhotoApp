@@ -10,27 +10,31 @@
       <section style="float: right; width:50%">
         <h2>Cat Form</h2>
         <form action="https://freecatphotoapp.com/submit-cat-photo">
-          <fieldset style="max-height:45px; margin-bottom: 15px; display: flex">
+          <fieldset title="Choose one" style="max-height:45px; margin-bottom: 15px; display: flex">
             <legend style="font-size-adjust: 20px;">Is your cat an indoor or outdoor cat?</legend>
             <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
             <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
           </fieldset>
-          <fieldset style="max-height:45px; margin-bottom: 15px; display:flex">
+          <fieldset title="Choose your cat's personality" style="max-height:45px; margin-bottom: 15px; display:flex">
             <legend style="font-size-adjust: 20px;">What's your cat's personality?</legend>
             <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
             <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
             <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
           </fieldset>
           <input type="text" name="catphotourl" placeholder="cat photo URL" required>
-          <button type="submit">Submit</button>
+          <button type="submit" title="submit data">Submit</button>
         </form>
       </section>
       <section style="float: left; width:50%">
         <h2>Cat Photos</h2>
         <!-- TODO: Add link to cat photos -->
         <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
-        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" 
-            alt="A cute orange cat lying on its back." style="display:flex; max-width: 60%;"></a>
+        <aside style="display:flex; max-width: 100%;">
+            <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" 
+                alt="A cute orange cat lying on its back." title="A cute orange cat lying on its back." style="max-width:100%;"></a>
+            <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" 
+                alt="Three kittens running towards the camera." title="Three kittens running towards the camera." style="max-width:70.2%;"></a>
+        </aside>
       </section>
       <h2 style="text-align-last: center; float:left; width: 100%;">Cat Lists</h2>
       <section style="float: right; width: 50%;">
@@ -42,7 +46,7 @@
         </ol>
         <figure>
           <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
-          alt="Five cats looking around a field." style="max-width: 150%;">
+          alt="Five cats looking around a field." title="Five cats looking around a field." style="max-width: 140%;">
           <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
         </figure>
       </section>
@@ -55,7 +59,7 @@
         </ul>
         <figure>
           <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
-          alt="A slice of lasagna on a plate." style="max-width: 110%;">
+          alt="A slice of lasagna on a plate." title="A slice of lasagna on a plate." style="max-width: 85%;">
           <figcaption>Cats <em>love</em> lasagna.</figcaption>  
         </figure>
       </section>
